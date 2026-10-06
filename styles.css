@@ -1,0 +1,291 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #1c2830;
+  background: #f6f3ec;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid #163a52;
+  background: #1e4d6b;
+  padding: 14px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f6f3ec;
+}
+
+.brand .dot {
+  color: #8ec5e0;
+}
+
+.site-nav a {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #f6f3ec;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(246, 243, 236, 0.78), rgba(246, 243, 236, 0.78)), url("images/madison-picnic-point.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 90px 0;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 46px;
+  text-transform: uppercase;
+  color: #1e4d6b;
+}
+
+.hero-subhead {
+  margin: 6px 0 22px;
+  font-size: 22px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-dark {
+  background: #1e4d6b;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background: #163a52;
+}
+
+.btn-outline {
+  border: 2px solid #1e4d6b;
+  color: #1e4d6b;
+  background: transparent;
+}
+
+.features {
+  padding: 42px 0;
+}
+
+.features-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #1e4d6b;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: #666;
+  font-size: 22px;
+}
+
+.icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.featured {
+  padding: 42px 0 36px;
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1e4d6b;
+}
+
+.section-lede {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 22px;
+  color: #555;
+  font-size: 16px;
+}
+
+.media {
+  background: #eaeaea url("images/lakeshore-path.jpg") center / cover no-repeat;
+  border: 1px solid #1e4d6b;
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+.secondary {
+  padding: 34px 0 44px;
+}
+
+.secondary-grid {
+  display: flex;
+  gap: 26px;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #d7dde2;
+  border-top: 6px solid #c4a15a;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1e4d6b;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #555;
+  font-size: 15px;
+}
+
+.card-text ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.card-image {
+  min-height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-a {
+  background-image: url("images/lakeshore-path.jpg");
+}
+
+.img-b {
+  background-image: url("images/madison-picnic-point.jpg");
+}
+
+.cta {
+  background: #fff;
+  padding: 42px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta h2 {
+  margin: 0 0 8px;
+  color: #1e4d6b;
+}
+
+.site-footer {
+  background: #1e4d6b;
+  border-top: 1px solid #163a52;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #f6f3ec;
+  font-size: 14px;
+}
+
+.footer-left a { color: #8ec5e0; }
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f6f3ec;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 14px;
+  color: #f6f3ec;
+  margin: 6px 0;
+}
+
+@media (max-width: 700px) {
+  .header-inner,
+  .features-grid,
+  .secondary-grid,
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .site-nav a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
